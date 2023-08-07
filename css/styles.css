@@ -127,9 +127,18 @@ p {
 }
 
 .main-section {
-	background-color: #2e2f42;
+	max-width: 1440рх;
 	padding: 188px 0;
 	text-align: center;
+
+	height: 600px;
+	background: linear-gradient(rgb(46, 47, 66, 0.7), rgb(46, 47, 66, 0.7)),
+		url("../images/people-office\ 1-3-2.jpg");
+	background-color: #2e2f42;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin: 0 auto;
 }
 
 .container-background {
@@ -184,6 +193,13 @@ p {
 .project-image-caption {
 	text-align: start;
 	width: calc((100% - 48px) / 3);
+}
+
+.menu-set li:hover,
+.menu-set li:focus {
+	box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+		0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .card-set {
@@ -281,7 +297,43 @@ a {
 }
 
 .mark {
+	background-color: white;
 	border-radius: 0px 0px 4px 4px;
+	background: #fff;
+	box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+		0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+		0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
+
+.fifth-section-headline {
+	text-align: center;
+	color: #2e2f42;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.11;
+	letter-spacing: 0.72px;
+}
+
+.clients-logo {
+	margin-top: 72px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.clients-logo-action {
+	fill: #404bbf;
+	border-radius: 4px;
+	border: 1px solid #8e8f99;
+	cursor: pointer;
+}
+
+.clients-logo-action:hover,
+.clients-logo-action:focus {
+	cursor: pointer;
+	fill: #2a2a2a;
+	border-color: #404bbf;
 }
 
 .footer-background {
@@ -351,6 +403,8 @@ a {
 	color: var(--main-color);
 	background-color: var(--company-color);
 	border: 1px solid transparent;
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+		0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .new-section-list {
 	font-size: 20px;
@@ -374,9 +428,10 @@ a {
 }
 
 .container {
-	width: 1158px;
-	margin: 0 auto;
+	width: 100%;
+	max-width: 1158px;
 	padding: 0 15px;
+	margin: 0 auto;
 }
 
 .menu {
@@ -407,4 +462,115 @@ a {
 
 .doing-list {
 	padding-top: 0px;
+}
+
+.social-links {
+	padding-top: 20px;
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+
+.social-links .icon-bg {
+	background-color: #4d5ae5;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.icon-bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.strong-side .icon-bg {
+	margin-bottom: 8px;
+	background-color: #f4f4fd;
+	border-radius: 4px;
+	height: 112px;
+}
+
+.footer-container-1 {
+	margin-right: 120px;
+	align-items: baseline;
+}
+
+.footer-container-2 {
+	align-items: baseline;
+}
+
+.social-media-footer {
+	margin-bottom: 16px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.32px;
+	color: #fff;
+}
+footer .container {
+	display: flex;
+}
+
+footer .social-links {
+	padding: 0;
+	gap: 16px;
+}
+footer .social-links .icon-bg:hover,
+footer .social-links .icon-bg:focus,
+footer .social-links .icon-bg:active {
+	background-color: #31d0aa;
+}
+footer .social-links .icon-bg svg {
+	fill: #f4f4fd;
+}
+footer .text-m {
+	color: white;
+}
+
+.social-links {
+	display: flex;
+	gap: 24px;
+	justify-content: center;
+}
+.social-links > .icon-bg > svg {
+	fill: #f4f4fd;
+}
+.social-links .icon-bg {
+	background-color: #4d5ae5;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.social-links .icon-bg:hover,
+.social-links .icon-bg:focus {
+	background-color: #404bbf;
+}
+
+.clients {
+	margin-top: 72px;
+	display: flex;
+	gap: 24px;
+}
+
+.client .icon-bg {
+	color: currentColor;
+	width: 168px;
+	height: 88px;
+	border-radius: 4px;
+	border: 1px solid currentColor;
+}
+.client .icon-bg:hover,
+.client .icon-bg:focus {
+	color: #404bbf;
+	fill: #404bbf;
+}
+.client .icon-bg svg {
+	fill: currentColor;
+}
+
+svg {
+	display: block;
+	fill: #f4f4fd;
 }

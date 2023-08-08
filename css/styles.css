@@ -89,6 +89,8 @@ p {
 	align-items: center;
 }
 
+
+
 .link {
 	color: var(--text-color);
 	text-decoration: none;
@@ -99,6 +101,9 @@ p {
 	vertical-align: top;
 	text-align: left;
 	padding: 24px 0;
+	position: relative;
+	text-decoration: none;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link:hover,
 .link:focus,
@@ -290,6 +295,7 @@ a {
 	letter-spacing: 0.32px;
 	vertical-align: top;
 	text-align: center;
+	padding-bottom: 8px;
 }
 
 .team {
@@ -465,7 +471,6 @@ a {
 }
 
 .social-links {
-	padding-top: 20px;
 	display: flex;
 	gap: 24px;
 	justify-content: center;
@@ -574,3 +579,5 @@ svg {
 	display: block;
 	fill: #f4f4fd;
 }
+
+
